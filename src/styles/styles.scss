@@ -10,3 +10,15 @@
 @use "components/forms";
 @use "components/theme";
 @use "utilities";
+
+.hero-section {
+  background: linear-gradient(135deg, #0d6efd, #6610f2);
+  height: 70vh;
+  animation: fadeIn 1.2s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
