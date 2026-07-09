@@ -60,3 +60,20 @@ if (portfolioGrid) {
       `).join("");
     });
 }
+
+// Gallery JSON loader
+const galleryGrid = document.getElementById("galleryGrid");
+
+if (galleryGrid) {
+  fetch("./data/gallery.json")
+    .then(res => res.json())
+    .then(images => {
+      galleryGrid.innerHTML = images.map(img => `
+        <div class="col-md-4">
+          <img src="${img.image}" alt="${img.alt}" 
+               class="img-fluid rounded shadow-sm gallery-img"
+               data-bs-toggle="modal" data-bs-target="#imageModal">
+        </div>
+      `).join("");
+    });
+}
