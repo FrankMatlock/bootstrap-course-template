@@ -1,0 +1,11 @@
+.card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+  @media (prefers-reduced-motion: no-preference) {
+    &:hover { transform: translateY(-3px); box-shadow: var(--bs-box-shadow-lg); }
+  }
+
+  .card-img-top { object-fit: cover; aspect-ratio: 16 / 9; }
+}
+
+.card .badge { font-size: 0.7rem; letter-spacing: 0.04em; text-transform: uppercase; }

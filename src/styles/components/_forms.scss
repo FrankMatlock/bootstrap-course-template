@@ -1,0 +1,11 @@
+.form-control, .form-select {
+  min-height: 2.75rem;
+  &:focus {
+    border-color: var(--bs-primary);
+    box-shadow: 0 0 0 0.2rem rgba(var(--bs-primary-rgb), 0.2);
+  }
+}
+
+textarea.form-control { resize: vertical; }
+
+.btn[data-loading="true"] { pointer-events: none; opacity: 0.8; }
