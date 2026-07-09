@@ -1,0 +1,20 @@
+[
+  {
+    "title": "Starter Website",
+    "image": "./assets/images/project1.jpg",
+    "description": "Your first multi-page Bootstrap site.",
+    "link": "#"
+  },
+  {
+    "title": "Landing Page",
+    "image": "./assets/images/project2.jpg",
+    "description": "A polished product landing page.",
+    "link": "#"
+  },
+  {
+    "title": "Capstone Project",
+    "image": "./assets/images/project3.jpg",
+    "description": "Your final multi-page site with custom theme.",
+    "link": "#"
+  }
+]
