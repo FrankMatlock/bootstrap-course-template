@@ -1,0 +1,33 @@
+{
+  "name": "bootstrap-course-template",
+  "version": "1.0.0",
+  "description": "12-Week Bootstrap CSS & JavaScript Course — starter repo template",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "npx eslint src/js --ext .js",
+    "format": "npx prettier --write \"src/**/*.{html,scss,js}\""
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.3",
+    "sass": "^1.77.4"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-legacy": "^5.4.1",
+    "autoprefixer": "^10.4.19",
+    "eslint": "^9.5.0",
+    "postcss": "^8.4.38",
+    "prettier": "^3.3.2",
+    "terser": "^5.31.1",
+    "vite": "^5.3.1"
+  },
+  "browserslist": [
+    "> 0.5%",
+    "last 2 versions",
+    "not dead",
+    "not IE 11"
+  ]
+}
