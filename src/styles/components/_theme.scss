@@ -1,0 +1,37 @@
+// ── Skip link ───────────────────────────────────────────────
+.skip-link {
+  position: absolute; top: -9999px; left: 0.5rem; z-index: 9999;
+  background: var(--bs-primary); color: #fff;
+  padding: 0.5rem 1rem; border-radius: 0 0 0.5rem 0.5rem;
+  font-weight: 600; text-decoration: none;
+  &:focus { top: 0; }
+}
+
+// ── Theme toggle button ──────────────────────────────────────
+#themeToggle {
+  width: 2.25rem; height: 2.25rem; padding: 0; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+  #themeIcon { font-size: 1rem; line-height: 1; }
+}
+
+// ── Dark mode overrides ──────────────────────────────────────
+[data-bs-theme="dark"] {
+  --bs-body-bg: #1a1d21;
+  --bs-body-bg-rgb: 26, 29, 33;
+
+  .card { background-color: #22262b; border-color: rgba(255,255,255,0.07); }
+  .navbar.bg-body-secondary  { background-color: #141618 !important; }
+  footer.bg-body-secondary   { background-color: #141618 !important; }
+  .hero-section {
+    background: linear-gradient(135deg, rgba(10,88,202,0.15) 0%, var(--bs-body-bg) 100%);
+  }
+}
+
+// ── Smooth theme transition (JS-triggered) ───────────────────
+.theme-transitioning,
+.theme-transitioning * {
+  @media (prefers-reduced-motion: no-preference) {
+    transition: background-color 0.25s ease, border-color 0.25s ease, color 0.25s ease !important;
+  }
+}
