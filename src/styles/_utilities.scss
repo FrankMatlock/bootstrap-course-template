@@ -1,0 +1,22 @@
+@use "bootstrap/scss/utilities" as *;
+
+$utilities: map-merge(
+  $utilities,
+  (
+    "padding-y-extended": (
+      property: padding-top padding-bottom,
+      class: py,
+      values: (6: map-get($spacers, 6), 7: map-get($spacers, 7)),
+    ),
+    "text-wrap-balance": (
+      property: text-wrap,
+      class: text,
+      values: (balance: balance),
+    ),
+    "cursor": (
+      property: cursor,
+      class: cursor,
+      values: (pointer: pointer, default: default, not-allowed: not-allowed),
+    ),
+  )
+);
