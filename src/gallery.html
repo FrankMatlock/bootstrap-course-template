@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery</title>
+  <link rel="stylesheet" href="./styles/styles.css">
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Course Site</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+          <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+          <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="py-5 bg-light text-center">
+    <div class="container">
+      <h1 class="display-5">Gallery</h1>
+      <p class="lead">A showcase of images and project snapshots.</p>
+    </div>
+  </header>
+
+  <section class="container py-5">
+    <div class="row g-4">
+
+      <!-- Gallery Item -->
+      <div class="col-md-4">
+        <img src="./assets/images/gallery1.jpg" class="img-fluid rounded shadow-sm gallery-img" alt="Gallery Image 1" data-bs-toggle="modal" data-bs-target="#imageModal">
+      </div>
+
+      <div class="col-md-4">
+        <img src="./assets/images/gallery2.jpg" class="img-fluid rounded shadow-sm gallery-img" alt="Gallery Image 2" data-bs-toggle="modal" data-bs-target="#imageModal">
+      </div>
+
+      <div class="col-md-4">
+        <img src="./assets/images/gallery3.jpg" class="img-fluid rounded shadow-sm gallery-img" alt="Gallery Image 3" data-bs-toggle="modal" data-bs-target="#imageModal">
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Modal -->
+  <div class="modal fade" id="imageModal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <img id="modalImage" class="img-fluid rounded" alt="Preview">
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="./js/main.js"></script>
+</body>
+</html>
