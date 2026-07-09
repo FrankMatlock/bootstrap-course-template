@@ -3,3 +3,14 @@ $primary: #0d6efd;
 $secondary: #6c757d;
 $font-family-base: 'Inter', sans-serif;
 $body-bg: #f8f9fa;
+// Light theme
+$primary: #0d6efd;
+$body-bg: #f8f9fa;
+$body-color: #212529;
+
+// Dark theme overrides
+.dark-theme {
+  --bs-body-bg: #121212;
+  --bs-body-color: #e9ecef;
+  --bs-primary: #0d6efd;
+}
