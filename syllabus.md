@@ -266,8 +266,3 @@ Your final project must include:
 - Add a gallery with modal previews  
 - Add a small JS app (calculator, todo list, etc.)
 
----
-
-Frank, your **syllabus.md is complete** and ready to paste into GitHub.
-
-If you want, I can now paste **checklist.md**, **README.md**, or generate **additional pages** for your repo.
