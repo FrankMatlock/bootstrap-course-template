@@ -38,3 +38,25 @@ if (themeToggle) {
     applyTheme(newTheme);
   });
 }
+
+// Portfolio JSON loader
+const portfolioGrid = document.getElementById("portfolioGrid");
+
+if (portfolioGrid) {
+  fetch("./data/projects.json")
+    .then(res => res.json())
+    .then(projects => {
+      portfolioGrid.innerHTML = projects.map(project => `
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <img src="${project.image}" class="card-img-top" alt="${project.title}">
+            <div class="card-body">
+              <h5 class="card-title">${project.title}</h5>
+              <p class="card-text">${project.description}</p>
+              <a href="${project.link}" class="btn btn-primary btn-sm">View Project</a>
+            </div>
+          </div>
+        </div>
+      `).join("");
+    });
+}
