@@ -1,0 +1,12 @@
+// 1. Project variable overrides (must come FIRST)
+@use "variables" as *;
+
+// 2–6. Bootstrap full Sass bundle
+@use "bootstrap/scss/bootstrap";
+
+// 7. Project partials
+@use "components/hero";
+@use "components/cards";
+@use "components/forms";
+@use "components/theme";
+@use "utilities";
